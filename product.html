@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products-shopping store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="container"> 
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo.png" width="125px"> 
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="image/cart.png" width="30px" height="30px">
+        <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+<div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>short by price</option>
+                <option>short by popularity</option>
+                <option>short by rating</option>
+                <option>short by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/product-1.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-2.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-3.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-4.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>    
+        </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download app for Android and ios mobile phone</p>
+            <div class="app-logo">
+                <img src="image/play-store.png">
+                <img src="image/app-store.png">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="image/logo-white.png">
+            <p>Our purpose is to sustainably make the pleasure <br> and benefits 
+                of sports accessible to the many.
+            </p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>blog post</li>
+                <li>return policy</li>
+                <li>join affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100009128253547">facebook</a></li>
+                <li><a href="https://www.instagram.com/">instagram</a></li>
+                <li><a href="https://twitter.com/">twitter</a></li>
+                <li><a href="https://www.youtube.com/watch?v=5CP9fycq8pk&ab_channel=MRTMusic">youtube</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+        <p class="copyright">Copyright 2020-My Cart</p>
+</div>
+</div>
+
+<!-----js for toggle menu------>
+  
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle()
+    {
+    if(MenuItems.style.maxHeight="0px")
+    {
+        MenuItems.style.maxHeight="200px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight="0px";
+    }
+    }
+
+</script>
+
+</body>
+</html>
